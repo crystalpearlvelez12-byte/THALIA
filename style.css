@@ -1,0 +1,183 @@
+/* From Uiverse.io by niat786 */ 
+body {
+      margin: 0;
+      font-family: Serif;
+      background: linear-gradient(135deg, #cf5aa1, #d4449b, #d12d91, #e880bf);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(30deg, #8f2b68, #a11369);
+      color: white;
+      padding: 1em;
+      
+    }
+
+    nav {
+      
+      justify-content: center;
+      gap: 1em;
+      padding: 1em;
+      background: #222;
+    }
+
+    .button {
+      border: none;
+      color: #fff;
+      background-image: linear-gradient(30deg, #e0169d, #fc78d0);
+      border-radius: 20px;
+      background-size: 100% auto;
+      font-family: inherit;
+      font-size: 17px;
+      padding: 0.6em 1.5em;
+      cursor: pointer;
+      transition: background-position 0.3s, background-size 0.3s;
+    }
+
+    .button:hover {
+      background-position: right center;
+      background-size: 200% auto;
+      animation: pulse512 1.5s infinite;
+    }
+
+    @keyframes pulse512 {
+      0% { box-shadow: 0 0 0 0 #05bada66; }
+      70% { box-shadow: 0 0 0 10px rgba(218, 103, 68, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(218, 103, 68, 0); }
+    }
+
+    .hero {
+      background: url('picc6.jpg') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      font-size: 2em;
+    }
+
+    section {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+	
+	.gallery {
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.gallery h2 {
+  margin-bottom: 1em;
+  color: #0400ff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1em;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+.events {
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.events h2 {
+  margin-bottom: 1em;
+  color: #0400ff;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+}
+
+.event-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card h3 {
+  color: #4ce3f7;
+  margin-bottom: 0.5em;
+}
+.contacts {
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.contacts h2 {
+  margin-bottom: 1em;
+  color: #0400ff;
+}
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card h3 {
+  color: #4ce3f7;
+  margin-bottom: 0.5em;
+}
+
+.contact-card a {
+  color: #0400ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-card a:hover {
+  color: #4ce3f7;
+}
